@@ -1,0 +1,14 @@
+server:
+  port: 3031
+
+spring:
+  application:
+    name: config-server # 应用名称
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhangjixu/springboot-config.git # 配置文件所在仓库
+          default-label: main # 配置文件分支
+          search-paths: config  # 配置文件所在根目录
